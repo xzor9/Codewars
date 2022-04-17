@@ -1,12 +1,11 @@
-function check(a, x) {
-  let found = false
-  for(let i=0;i<a.length;i++){
-    if(a[i]===x){
-      found = true
-    }
+function rentalCarCost(d) {
+  if(d<3){
+    return d*40
   }
-  return found
+  else if(d<7){
+    return d*40-20
+  }
+  else{
+    return d*40-50
+  }
 }
-
-
-//const check = (a,x) => a.includes(x);
